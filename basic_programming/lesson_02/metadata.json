@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/calculator/Actions.java",
+    "code/calculator/CalculatorMain.java",
+    "code/demo/filename.txt",
+    "code/PrimitivesTest.java",
+    "code/ScannerTestConsole.java",
+    "code/ScannerTestFile.java"
+  ],
+  "video": ""
+}
