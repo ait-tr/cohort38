@@ -7,7 +7,7 @@
 
 
 ![img](https://raw.githubusercontent.com/ait-tr/cohort38/main/basic_programming/lesson_02/image/img.png)
-[img.png](image%2Fimg.png)
+
 
 ## java.util.Scanner
 

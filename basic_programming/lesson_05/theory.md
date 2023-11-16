@@ -1,9 +1,10 @@
-## Boolean в Java
+## Logical Operators
 
 * Logical Operators
 
-![img.png](img%2Fimg.png)
-![img_1.png](img%2Fimg_1.png)
+
+![img](https://raw.githubusercontent.com/ait-tr/cohort38/main/basic_programming/lesson_05/img/img.png)
+![img](https://raw.githubusercontent.com/ait-tr/cohort38/main/basic_programming/lesson_05/img/img_1.png)
 
 
 Внимание! В Java логические операторы &, | и ^ применяются также к целым числам. В этом случае они работают несколько иначе и называются поразрядными (или побитовыми) логическими операторами.

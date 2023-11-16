@@ -5,6 +5,6 @@
 * Символы (char)
 * Логические (boolean)
 
-![img.png](img%2Fimg.png)
-![img_1.png](img%2Fimg_1.png)
-![img_2.png](img%2Fimg_2.png)
+![img](https://raw.githubusercontent.com/ait-tr/cohort38/main/basic_programming/lesson_03/img/img.png)
+![img](https://raw.githubusercontent.com/ait-tr/cohort38/main/basic_programming/lesson_03/img/img_1.png)
+![img](https://raw.githubusercontent.com/ait-tr/cohort38/main/basic_programming/lesson_03/img/img_2.png)
