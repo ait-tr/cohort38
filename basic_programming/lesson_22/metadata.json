@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/ArrayManipulator.java",
+    "code/Book.java",
+    "code/Calculator.java",
+    "code/Customer.java",
+    "code/Employee.java",
+    "code/Human.java",
+    "code/Main.java",
+    "code/StringUtils.java"
+  ],
+  "video": ""
+}

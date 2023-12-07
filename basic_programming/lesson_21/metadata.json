@@ -3,13 +3,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/AreaCalculator.java",
+    "code/ArrayCalculation.java",
     "code/Calculation.java",
-    "code/Counter.java",
-    "code/Family.java",
     "code/Main.java",
-    "code/ResourceManager.java",
-    "code/Student.java",
-    "code/Test.java"
+    "code/NumberUtils.java",
+    "code/StringUtils.java",
+    "code/User.java"
   ],
   "video": ""
 }
