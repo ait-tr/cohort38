@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Animal.java",
+    "code/Car.java",
+    "code/Client.java",
+    "code/Dog.java",
+    "code/Employee.java",
+    "code/Main.java",
+    "code/Manager.java",
+    "code/Person.java",
+    "code/Vehicle.java"
+  ],
+  "video": ""
+}
