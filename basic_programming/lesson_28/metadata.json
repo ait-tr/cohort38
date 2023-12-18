@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/CustomList.java",
+    "code/CustomStringList.java",
+    "code/Main.java"
+  ],
+  "video": ""
+}
