@@ -3,9 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "Employee.java",
-    "Main.java",
-    "Recursion.java"
+    "code/Employee.java",
+    "code/Main.java",
+    "code/Recursion.java"
   ],
   "video": ""
 }
