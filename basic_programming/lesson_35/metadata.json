@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/CustomIterator.java",
+    "code/CustomList.java",
+    "code/Employee.java",
+    "code/Main.java",
+    "code/Manager.java",
+    "code/Programmer.java"
+  ],
+  "video": ""
+}
