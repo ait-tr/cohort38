@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Apple.java",
+    "code/Box.java",
+    "code/Box_1.java",
+    "code/Comparer.java",
+    "code/Employee.java",
+    "code/Fruit.java",
+    "code/GenericStack.java",
+    "code/Main.java",
+    "code/Orange.java",
+    "code/Pair.java",
+    "code/Person.java",
+    "code/Value.java"
+  ],
+  "video": ""
+}
