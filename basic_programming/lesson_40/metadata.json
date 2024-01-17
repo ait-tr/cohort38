@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/CachingSqrt.java",
+    "code/DayOfWeek.java",
+    "code/Employee.java",
+    "code/Main.java",
+    "code/Position.java"
+  ],
+  "video": ""
+}
