@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "code": [
+    "code/BL/TaskManager.java",
+    "code/BL/TaskManagerByObjects.java",
+    "code/DL/Task.java",
+    "code/DL/DataHandlerByString.java",
+    "code/DL/DataHandlerByObjects.java",
+    "code/DL/Priority.java",
+    "code/DL/Status.java",
+    "code/DL/Task.java",
+    "code/UI/ConsoleUI.java",
+    "code/UI/ConsoleUIForObjects.java",
+    "code/Main.java"
+  ],
+  "video": ""
+}
