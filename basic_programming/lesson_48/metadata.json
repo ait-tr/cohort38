@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "code": [
+    "code/test/java/org/example/CalculatorTest.java",
+    "code/main/java/org/example/Calculator.java"
+  ],
+  "video": ""
+}
+
+
