@@ -1,9 +1,8 @@
 ## Plan
 
-1. Проверка д/з
-2. setTimeout
-3. setInterval
-4. Promise, then, catch
+1. setTimeout
+2. setInterval
+3. Promise, then, catch
 
 
 
