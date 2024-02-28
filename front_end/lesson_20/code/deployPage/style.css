@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  margin-top: 0;
+  text-decoration: underline;
+  /* font-style: italic; */
+}
+
+.filmText {
+  color: white;
+}
+
+/* #btnFetch {
+  display: none;
+  visibility: hidden;
+} */
+
+.card {
+  width: 320px;
+  height: 738px;
+  padding: 50px;
+  background-color: rgb(46, 50, 90);
+  margin: 15px;
+  border-radius: 25px;
+}
+
+#poster {
+  width: 100%;
+  /* background: (transparent 50%, black); */
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(58, 128, 64);
+}
+
+.orange {
+  background-color: orange;
+}
+
+.violet {
+  background-color: violet;
+}
