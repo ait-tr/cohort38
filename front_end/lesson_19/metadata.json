@@ -3,12 +3,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "./code/fetch-dog/index.html",
+    "./code/fetch-dog/style.css",
+    "./code/fetch-dog/script.js",
     "./code/async-await/async-await.js",
-    "./code/fetch-intro/fetch-intro.js",
-    "./code/get-cat/index.html",
-    "./code/get-cat/script.js",
-    "./code/get-dog/script.js",
-    "./code/homework.js"
+    "./code/fetch/fetch.js",
+    "./code/homework/homework.js"
   ],
   "video": "",
   "etc": ""
