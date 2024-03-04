@@ -6,6 +6,7 @@
 
 fetch("https://dog.ceo/api/breeds/image/random")
   // дожидаемся ответа от запроса
+
   .then((res) => res.json())
 
   // дожидаемся выполнения .json()
