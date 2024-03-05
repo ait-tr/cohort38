@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- подключаем отображение иконки на вкладке браузера -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title>Fake store API 🏪</title>
+  </head>
+  <body>
+    <div class="containerWrapper" id="containerWrapper">
+      <header class="header" id="header">
+        <img id="burger" src="./images/burger.svg" class="burger logo" alt="" />
+        <a class="desktop" href="./">
+          <img src="./images/home.svg" class="logo" alt="" />
+        </a>
+        <a href="videos/videos.html" class="navLink">videos</a>
+        <a href="/info/info.html" class="navLink">grid</a>
+      </header>
+      <main class="main" id="main">
+        <div id="panel" class="panel">
+          <a href="" class="navLink">videos</a>
+          <a href="../info/info.html" class="navLink">grid</a>
+        </div>
+        <div id="loader" style="display: none" class="loader"></div>
+        <h3>Upload items from store:</h3>
+        <form id="formItems" action="">
+          <label for="">Amount of items:</label>
+          <input
+            name="form-amount"
+            type="number"
+            placeholder="Amount"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+        <div style="display: none" id="contentContainer">
+          <h3>Product list:</h3>
+          <div class="productsGrid" id="productList"></div>
+        </div>
+      </main>
+      <footer class="footer" id="footer"></footer>
+    </div>
+  </body>
+</html>

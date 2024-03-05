@@ -1,0 +1,368 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* подключение шрифтов через файл woff2 */
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('/fonts/SourceCodePro-Bold.ttf.woff2');
+}
+
+* {
+  box-sizing: border-box;
+  /* подключаем шрифты по умолчанию */
+  font-family: "SourceCodePro", sans-serif;
+  /* font-style: bold; */
+}
+
+a {
+  /* шрифты для всех ссылок */
+  font-family: "Pacifico", cursive;
+  /* font-weight: 100;
+  font-style: normal; */
+}
+
+body {
+  margin: 0;
+  background-color: aliceblue;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background-color: #5573B5;
+  position: fixed;
+  /* top: unset; */
+  top: 100px;
+  overflow-y: auto;
+  display: none;
+}
+
+.panel a {
+  color: white;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+.panel a:hover {
+  text-decoration: underline;
+}
+
+.panelShow {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.productsGrid {
+  padding: 0px 100px 0;
+  display: grid;
+  gap: 5px;
+  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.productsItem {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 50px 20px 30px;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgWrapper {
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gridContainerFix {
+  width: 100%;
+  height: 800px;
+  /* чтобы включить отображении grid сетки поменяйте значение display на grid */
+  display: grid;
+  /* через grid-template-columns вы задаете значение ширины для каждой колонки, и само кол-во колонок  */
+  /* сколько числе - столько и колонок */
+  grid-template-columns: 50px 200px 150px;
+  /* аналогично для строк, кол-во строк и значение высоты */
+  /* grid-template-rows: 50px 100px 200px 150px; */
+  /* grid-auto-rows добавляет строки заданной высоты по надобности */
+  grid-auto-rows: 50px;
+  gap: 10px;
+}
+
+.gridContainerAdaptive {
+  display: grid;
+  width: 100%;
+  /* в фреймах мы указываем относительную величину в условных единицах */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-auto-rows: 100px;
+}
+
+.gridContainerMinMax {
+  display: grid;
+  width: 100%;
+  gap: 15px;
+  /* через repeat мы говорим что ячейки будут повторяться */
+  /* через minmax() указываем минимальное и максимальное значение для контейнера */
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  justify-items: end;
+  grid-auto-rows: 100px;
+}
+
+.gridContainerAuto {
+  margin-top: 30px;
+  border: 1px solid grey;
+  display: grid;
+  /* в случае если у нас одна строка и появляется лишнее пространство в строке */
+  /* auto-fit - растянет ячейки */
+  /* auto-fill - построит недостающие ячейки */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+}
+
+.gridContainerAuto div {
+  background-color: #c3cdf9;
+}
+
+.gridItem {
+  height: 100%;
+  width: 100%;
+  background-color: #9dfda7;
+}
+
+.gridContainerAreas {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(4, 1fr);
+  /* мы можем объединять ячейки через зоны прописав им одинаковое значение */
+  grid-template-areas:
+    'header header header'
+    'content content item'
+    'content content element'
+    '🐥 footer footer'
+  ;
+}
+
+
+
+.chicken {
+  /* так мы привязываем элемент к определенной зоне */
+  grid-area: 🐥;
+}
+
+.content {
+  background-color: lightblue;
+  grid-area: content;
+}
+
+.top {
+  background-color: lightpink;
+  grid-area: header;
+}
+
+.bottom {
+  background-color: lightgreen;
+  grid-area: footer;
+}
+
+
+.gridContainerChess {
+  margin-top: 30px;
+  display: grid;
+  height: 600px;
+  grid-template-rows: repeat(8, 1fr);
+  /* свойства для выравнивания элементов внутри ячейки */
+  /* для всех внутри всего grid */
+  justify-items: start;
+  align-items: center;
+  grid-template-areas:
+    'a8 b8 c8 d8 e8 f8 g8 h8'
+    'a7 b7 c7 d7 e7 f7 g7 h7'
+    'a6 b6 c6 d6 e6 f6 g6 h6'
+    'a5 b5 c5 d5 e5 f5 g5 h5'
+    'a4 b4 c4 d4 e4 f4 g4 h4'
+    'a3 b3 c3 d3 e3 f3 g3 h3'
+    'a2 b2 c2 d2 e2 f2 g2 h2'
+    'a1 b1 c1 d1 e1 f1 g1 h1'
+  ;
+}
+
+.gridContainerChess div {
+  height: 100%;
+  width: 100%;
+  border: 1px rgb(197, 155, 155) solid;
+}
+
+.queen {
+  /* свойства для выравнивания элементов внутри ячейки */
+  /* индивидуально для одной ячейки */
+  justify-self: end;
+  align-self: center;
+  grid-area: c3;
+}
+
+
+.tower {
+  justify-items: end;
+  grid-area: g7;
+}
+
+
+.logo {
+  width: 20px;
+}
+
+.containerWrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  top: 0px;
+  width: 100%;
+  min-height: 100px;
+  /* position: fixed; */
+  position: sticky;
+  padding: 35px;
+  /* background-color: #ff661f; */
+  background-image: url('/images/tsunami.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: #ff661f;
+  /* background-image: url('/images/waves.jpeg'); */
+}
+
+.burger {
+  display: none;
+  color: white;
+}
+
+.header>.navLink {
+  margin-left: 15px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.header>a:hover {
+  text-decoration: underline;
+}
+
+.desc>span {
+  color: #ff661f;
+}
+
+ul {
+  padding: 0;
+  margin: 0px 10px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  margin: 5px 0;
+  background-color: #fff;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3c00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 0.7s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @media screen and (max-width: 800px) {
+  .header {
+    background-color: rgb(90, 181, 85);
+  }
+
+  .header>a {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 700px) {
+
+  .burger {
+    cursor: pointer;
+    display: inline;
+  }
+
+  .header {
+    background-image: none;
+    background-color: rgb(85, 115, 181);
+  }
+
+  .productsGrid {
+    grid-auto-rows: auto;
+  }
+
+  .gridContainerAdaptive {
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+
+  .header>a {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .gridContainerAdaptive {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
